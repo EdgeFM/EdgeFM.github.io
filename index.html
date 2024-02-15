@@ -70,85 +70,6 @@
 
 
   <script type="text/javascript">
-    var organizers = [
-      {
-        "name": "Georgia Chalvatzaki",
-        "affiliation": "TU Darmstadt",
-        "website": "https://irosalab.com/people/georgia-chalvatzaki/",
-        "img": "imgs/georgia.jpg"
-      },
-      {
-        "name": "Beomjoon Kim",
-        "affiliation": "KAIST",
-        "website": "https://beomjoonkim.github.io/",
-        "img": "imgs/beomjoon.jpg"
-      },
-      {
-        "name": "Eric Rosen",
-        "affiliation": "Boston Dynamics AI Institute",
-        "website": "https://cs.brown.edu/people/er35/home.html",
-        "img": "imgs/eric.jpg"
-      },
-      {
-        "name": "David Paulius",
-        "affiliation": "Brown University",
-        "website": "https://davidpaulius.github.io/",
-        "img": "imgs/david.jpg"
-      }
-    ];
-
-    function randomize_organizers() {
-      // Source: https://stackoverflow.com/a/6274381
-      function shuffle(a) {
-        var j, x, i;
-        for (i = a.length - 1; i > 0; i--) {
-          j = Math.floor(Math.random() * (i + 1));
-          x = a[i];
-          a[i] = a[j];
-          a[j] = x;
-        }
-        return a;
-      }
-
-      // randomly shuffling order of organizers upon load!
-      shuffle(organizers);
-
-      for (var x = 0; x < organizers.length; x++) {
-        let img_element = document.createElement("img");
-        img_element.src = organizers[x].img;
-        img_element.alt = organizers[x].name;
-
-        let name_element = document.createElement("p");
-        let strong_element = document.createElement("strong");
-        let p = document.createElement("p");
-        let a = document.createElement("a");
-        a.href = organizers[x].website;
-        a.target = "_blank";
-        a.textContent = organizers[x].name;
-        p.appendChild(a);
-        strong_element.appendChild(p);
-        name_element.appendChild(strong_element);
-
-        let aff_element = document.createElement("p");
-        aff_element.textContent = organizers[x].affiliation;
-
-        let thumbnail = document.createElement("div");
-        thumbnail.classList.add("thumbnail")
-        thumbnail.appendChild(img_element);
-        thumbnail.appendChild(name_element);
-        thumbnail.appendChild(aff_element);
-
-        let column = document.createElement("div");
-        column.classList.add("col-sm-4")
-        column.appendChild(thumbnail);
-
-        if (x < organizers.length / 2) {
-          document.getElementById("orgrow_1").appendChild(column);
-        } else {
-          document.getElementById("orgrow_2").appendChild(column);
-        }
-      }
-    }
   </script>
 
 </head>
@@ -204,7 +125,7 @@
       <h2>Overview</h2>
       
       <p>
-        The advent of large foundation models in the realm of AI, including large language models (LLMs), vision foundation models, and multimodal LLMs, has opened new frontiers in various applications. However, deploying these resource-intensive models on edge and mobile devices poses significant challenges due to their limited computing power and storage capacity. Their interaction with mobile devices and applications also needs to be reshaped. This workshop aims to explore the innovative methodologies and advancements for edge and mobile foundation models in two main aspects:
+        The advent of large foundation models in the realm of AI, including large language models (LLMs), large vision models (LVMs), large multimodal models (LMMs), and diffusion models, has opened new frontiers in various applications. However, deploying these resource-intensive models on edge and mobile devices poses significant challenges due to their limited computing power and storage capacity. Their interaction with mobile devices and applications also needs to be reshaped. This workshop aims to explore the innovative methodologies and advancements for edge and mobile foundation models in two main aspects:
         <ul>
           <li>How to make it feasible to use foundation models in resource-constrained edge/mobile environments.</li>
           <li>How to build killer edge and mobile applications atop foundation models.</li>
@@ -243,7 +164,7 @@
 
       <h2>Submission Guidelines</h2>
 
-<p>The workshop follows a single-blinded review process. We invite original research papers that have not been previously published and are not currently under review for publication. All submissions must follow the formatting guidelines of MobiSys 2024. All submissions must use a 10pt font (or larger) and be correctly formatted for printing on letter-sized (8.5" by 11") paper. Paper text blocks must follow ACM guidelines: double-column, with each column 9.25" by 3.33", 0.33" space between columns, and single-spaced. The abstract should contain less than 250 words. </p>
+<p>The workshop follows a single-blinded review process. We invite original research papers that have not been previously published. All submissions must follow the formatting guidelines of MobiSys 2024. All submissions must use a 10pt font (or larger) and be correctly formatted for printing on letter-sized (8.5" by 11") paper. Paper text blocks must follow ACM guidelines: double-column, with each column 9.25" by 3.33", 0.33" space between columns, and single-spaced. The abstract should contain less than 250 words. </p>
 <p>The workshop invites two kinds of papers:</p>
 <ul>
   <li>Full papers must be no longer than 6 pages including references. Such papers shall present a cohesive storyline, design, implementation, and experiments.
@@ -269,7 +190,7 @@
     <h2>Important Dates</h2>
     <table class="calculator table-borderless" style="text-align:center; margin: 0 auto;">
       <tr>
-        <td class="noborder">Paper Submission Deadline
+        <td class="noborder">Submission Deadline (Hard)
         </td>
         <td class="noborder"><b class="font-weight-bold">April 6th, 2024</b> (11:59 PM AoE)
         </td>
@@ -295,7 +216,7 @@
     </table>
   </div>
 
-  <div class="section" id="schedule" style="align-content: center;">
+  <!-- <div class="section" id="schedule" style="align-content: center;">
     <h2>Schedule</h2>
     <table class="calculator table-borderless" style="text-align:center; margin: 0 auto;">
       <tr>
@@ -308,7 +229,7 @@
         <td class="noborder"><b class="font-weight-bold">Portraits</b>
         </td>
       </tr>
-      <!-- 
+      
       <tr>
         <td class="noborder">8:30 - 8:45
         </td>
@@ -334,7 +255,7 @@
         <td class="noborder">
           <img src="imgs/avatar.jpg" class="rounded-circle" alt="Speaker Name" height="140">
         </td>
-      </tr> -->
+      </tr>
       <tr>
         <td class="noborder"> TBD
         </td>
@@ -346,13 +267,13 @@
         </td>
       </tr>
     </table>
-  </div>
+  </div> -->
 
 
 
   <div class="section" id="committee" style="text-align: center; padding: 10px;">
     <h2>Committees</h2>
-    <h3>Organizing Committee</h3>
+    <!-- <h3>Organizing Committee</h3>
     <br />
 
     <div class="grid">
@@ -393,12 +314,13 @@
         </div>
       </center>
     </div>
-    <br />
+    <br /> -->
 
-    <h3 style="text-align: center;">Steering Committee</h3>
-    <p><a href="#">Name 1</a> - Affiliation 1</p>
-    <p><a href="#">Name 2</a> - Affiliation 2</p>
-    <p><a href="#">Name 3</a> - Affiliation 3</p>
+    <h3 style="text-align: center;">Organizing Committee</h3>
+    <p><a href="#">Mengwei Xu</a> - Beijing University of Posts and Telecommunications</p>
+    <p><a href="#">Ting Cao</a> - Microsoft Research</p>
+    <p><a href="#">Yuanchun Li</a> - Tsinghua University</p>
+    <p><a href="#">Yunxin Liu</a> - Tsinghua University</p>
     <br />
 
     <h3 style="text-align: center;">Program Committee</h3>
