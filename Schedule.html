@@ -66,54 +66,6 @@
       border-top: 20px solid rgb(255, 255, 255);
       float: right;
     }
-
-
-    table {
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%; /* 可以根据需求调整宽度 */
-        border-collapse: collapse;
-    }
-    .day{
-        background-color: black;
-        font-weight: bold;
-        color: #f1f1f1;
-    }
-    .time-slot {
-        background-color: bisque;
-        font-weight: bold;
-    }
-    .time {
-        width: 15%; /* 设定时间列的固定宽度 */
-        display: inline-block; /* 让时间作为块状元素显示，可以定义宽度 */
-    }
-    .event {
-        display: inline-block; /* 同样让事件名称作为块状元素显示 */
-    }
-    .session-title {
-        background-color: bisque;
-        font-weight: bold;
-    }
-    .paper {
-        /* margin-top: 3px; */
-        padding-top: 3px;
-        padding-bottom: 3px;
-        background-color: #f1f1f1;
-        /* padding: 3px; */
-    }
-    .paper-title{
-        margin-left: 3%;
-        margin-top: 1px;
-        /* background-color: #f0f0f0; */
-        font-size: 15px;
-        font-weight: bold;
-    }
-    .speaker-info {
-        margin-left: 3%;
-        font-size: 15px;
-        margin-bottom: 3px; /* 添加一点间距使得内容更易读 */
-        /* font-weight: bold; */
-    }
   </style>
 
 
@@ -130,23 +82,22 @@
     <div class="collapse navbar-collapse" id="main-navigation">
       <ul class="navbar-nav">
         <li class="nav-item">
-            <a class="nav-link" href="index.html#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="CallForPaper.html">Call for Papers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Schedule.html">Schedule</a>
-          </li>
-          <!-- <li class="nav-item">
-              <a class="nav-link" href="index.html#program">Program</a>
-            </li> -->
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="index.html#related">Related Workshops</a>
+          <a class="nav-link" href="index.html#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="CallForPaper.html">Call for Papers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Schedule.html">Schedule</a>
+        </li>
+        <!-- <li class="nav-item">
+            <a class="nav-link" href="index.html#program">Program</a>
           </li> -->
-          <li class="nav-item">
-            <a class="nav-link" href="Committees.html">Committees</a>
-          </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="index.html#related">Related Workshops</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="Committees.html">Committees</a>
         </li>
       </ul>
     </div>
@@ -167,169 +118,22 @@
   </div>
 
   <div class="container" style="padding-bottom: 0px;">
-    <div class="section" id="schedule" >
-        <table>
-            <tbody>
-                <tr>
-                    <td class="day">Friday, June 7th</td>
-                </tr>
-                <tr>
-                    <td class="time-slot">
-                        <span class="time">9:00 - 9:05</span> 
-                        <span class="event">Opening</span>
-                    </td>
-                </tr>
-                <tr >
-                    <td class="session-title">
-                        <span class="time">9:05 - 9:50</span> 
-                        <span class="event">Keynote 1</span>
-                    </td>
-                </tr>
-                <tr >
-                    <td class="session-title">
-                        <span class="time">9:50 - 10:30</span>
-                        <span class="event">Session 1: LLM and Sensing</span>
-                    </td>
-                </tr>
-                <!-- <tr >
-                    <td class="paper">
-                        <div class="paper-title">ChainStream: A Stream-based LLM Agent Framework for Continuous Context Sensing and Sharing</div>
-                        <div class="speaker-info">Jiacheng Liu(Beijing Institute of Technology)
-                            , Wenxing Xu(Beijing University of Posts and Telecommunications)
-                            , Yuanchun Li(Institute for AI Industry Research (AIR), Tsinghua University)
-                        </div>
-                    </td>
-                </tr>
-                <tr >
-                    <td class="paper">
-                        <div class="paper-title">Are Large Language Models Capable of Causal Reasoning for Sensing Data Analysis?</div>
-                        <div class="speaker-info">Zhizhang Hu(University of California, Merced)
-                            , Yue Zhang(University of California, Merced)
-                            , Ryan Rossi(Adobe Research)
-                            , Tong Yu(Adobe Research)
-                            , Sungchul Kim(Adobe Research)
-                            , Shijia Pan(University of California, Merced)
-                        </div>
-                    </td>
-                </tr>
-                <tr >
-                    <td class="paper">
-                        <div class="paper-title">A Solution for Reducing MLLM-Based Agent Interaction Overhead</div>
-                        <div class="speaker-info">Wenjie Li(Huawei Technologies Co., Ltd.)
-                            , Xiaoyang Liu(Huawei Technologies Co., Ltd.)
-                            , Zihao Zheng(Huawei Technologies Co., Ltd.)
-                            , Jishun Wang(Huawei Technologies Co., Ltd.)
-                            , Kang Ling(Huawei Technologies Co., Ltd.)
-                            , Ming Fu(OS Kernel Lab, Huawei Technologies)
-                        </div>
-                    </td>
-                </tr> -->
-                
-                <tr>
-                    <td class="time-slot">
-                        <span class="time">10:30 - 11:00</span>
-                        <span class="event">Coffee Break</span>
-                    </td>
-                </tr>
-                <tr >
-                    <td class="session-title">
-                        <span class="time">11:00 - 11:40</span>
-                        <span class="event">Session 2: LLM for Mobile Scenario</span>
-                    </td>
-                </tr>
-                <!-- <tr >
-                    <td class="paper">
-                        <div class="paper-title">Large Language Models on Mobile Devices: Measurements, Analysis, and Insights</div>
-                        <div class="speaker-info">Xiang Li(Beijing University of Posts and Telecommunications)
-                            , Zhenyan Lu(Beijing University of Posts and Telecommunications)
-                            , Dongqi Cai(Beijing University of Posts and Telecommunications)
-                            , Xiao Ma(Beijing University of Posts and Telecommunications)
-                            , Mengwei Xu(Beijing University of Posts and Telecommunications)
-                        </div>
-                    </td>
-                </tr>
-                <tr >
-                    <td class="paper">
-                        <div class="paper-title">Hybrid SLM and LLM for Edge-Cloud Collaborative Inference</div>
-                        <div class="speaker-info">Huiqiang Jiang(Microsoft Research)
-                            , Huiqiang Jiang(Microsoft Research)
-                            , Shiqi Jiang(Microsoft Research)
-                            , Ju Ren(Tsinghua University)
-                            , Ting Cao(Microsoft Research)
-                        </div>
-                    </td>
-                </tr>
-                <tr >
-                    <td class="paper">
-                        <div class="paper-title">An On-device LLM-based Approach to Query Privacy Protection</div>
-                        <div class="speaker-info">Yizhen Yuan(Institute for AI Industry Research (AIR), Tsinghua University)
-                            , Rui Kong(Shanghai Jiao Tong University)
-                            , Yuanchun Li(Institute for AI Industry Research (AIR), Tsinghua University)
-                            , Yunxin Liu(Institute for AI Industry Research (AIR), Tsinghua University)
-                            , Yizhen Yuan(Institute for AI Industry Research (AIR), Tsinghua University)
-                        </div>
-                    </td>
-                </tr> -->
-                <tr >
-                    <td class="session-title">
-                        <span class="time">11:40 - 12:30</span>
-                        <span class="event">Panel</span>
-                    </td>
-                </tr>
-
-                <tr >
-                    <td class="session-title">
-                        <span class="time">14:00 - 14:45</span>
-                        <span class="event">Keynote 2</span>
-                    </td>
-                </tr>
-                <tr >
-                    <td class="session-title">
-                        <span class="time">14:45 - 15:20</span>
-                        <span class="event">Session 3: LLM for Mobile Hardware</span>
-                    </td>
-                </tr>
-                <!-- <tr >
-                    <td class="paper">
-                        <div class="paper-title">Towards a Task-agnostic Distillation Methodology for Creating Edge Foundation Models</div>
-                        <div class="speaker-info">Swarnava Dey(TCS Research, Tata Consultancy Services)
-                            , Arijit Mukherjee(TCS Research, Tata Consultancy Services)
-                            , Arijit Ukil(TCS Research, Tata Consultancy Services)
-                            , Arpan Pal(TCS Research, Tata Consultancy Services)
-
-                        </div>
-                    </td>
-                </tr>
-                <tr >
-                    <td class="paper">
-                        <div class="paper-title">Towards Light Adaptation of Large Language Models For Personal Hardware</div>
-                        <div class="speaker-info">Liangyu Wang(King Abdullah University of Science and Technology)
-                            , Junxiao Wang(King Abdullah University of Science and Technology)
-                            , Di Wang(King Abdullah University of Science and Technology)
-                        </div>
-                    </td>
-                </tr>
-                <tr >
-                    <td class="paper">
-                        <div class="paper-title">Efficient LLM Prefilling with Mobile NPU</div>
-                        <div class="speaker-info">Daliang Xu(Peking University)
-                            , Hao Zhang(Beijing jiaotong Univsersity)
-                            , Liming Yang(Peking University)
-                            , Ruiqi Liu(Peking University)
-                            , Mengwei Xu(Beijing University of Posts and Telecommunications (BUPT))
-                            ,Xuanzhe Liu(Peking University)
-                        </div>
-                    </td>
-                </tr> -->
-
-
-            </tbody>
-        </table>
-    </div>
+    <div class="section" id="overview">
+      <h2>Overview</h2>
+      
+      <p>
+        The advent of large foundation models in the realm of AI, including large language models (LLMs), large vision models (LVMs), large multimodal models (LMMs), and diffusion models, has opened new frontiers in various applications. However, deploying these resource-intensive models on edge and mobile devices poses significant challenges due to their limited computing power and storage capacity. Their interaction with mobile devices and applications also needs to be reshaped. This workshop aims to explore the innovative methodologies and advancements for edge and mobile foundation models in two main aspects:
+        <ul>
+          <li>How to make it feasible to use foundation models in resource-constrained edge/mobile environments.</li>
+          <li>How to build killer edge and mobile applications atop foundation models.</li>
+        </ul>
+      </p>
     </div>
 
+  
 
   <div class="section" id="committee" style="text-align: center;">
+
     <h3 style="text-align: center;">Supported by:</h3>
     <a href="https://www.sigmobile.org/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/SIGMOBILE_Logo.svg" alt="SIGMOBILE" height="140"></a>
     <a href="https://www.sigbedchina.org/" target="_blank"><img src="https://www.sigbedchina.org/static/logo.png" alt="SIGBED China Chapter" width="140" height="140"></a>
