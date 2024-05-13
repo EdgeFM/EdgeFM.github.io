@@ -76,6 +76,7 @@ ul {
     cursor: pointer;
 }
 .nav-link {
+    font-weight: bold;
     margin-right: 1em !important;
 }
 .nav-link:hover {
