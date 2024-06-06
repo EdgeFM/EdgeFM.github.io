@@ -90,6 +90,10 @@
     .event {
         display: inline-block; /* 同样让事件名称作为块状元素显示 */
     }
+    .host{
+        background-color: #f1f1f1;
+        font-weight: bold;
+    }
     .session-title {
         background-color: bisque;
         font-weight: bold;
@@ -171,25 +175,52 @@
         <table>
             <tbody>
                 <tr>
-                    <td class="day">Friday, June 7th</td>
+                    <td class="day">Friday, June 7th (Location: 5F Hall A)
+                      
+                    </td>
+                    <td class="day">
+                      <span>HOST</span>
+                    </td>
                 </tr>
                 <tr>
                     <td class="time-slot">
                         <span class="time">9:00 - 9:05</span> 
                         <span class="event">Opening</span>
                     </td>
+                    <td class="host">
+                        Mengwei Xu
+                    </td>
                 </tr>
                 <tr >
                     <td class="session-title">
                         <span class="time">9:05 - 9:50</span> 
-                        <span class="event">Keynote 1 (Lili Qiu)</span>
+                        <span class="event">Keynote 1 by Lili Qiu</span>
                     </td>
+                    <th rowspan="2" class="host">
+                      Mengwei Xu
+                    </td>
+                </tr>
+                <tr >
+                  <td class="paper">
+                      <div class="paper-title">The future of healthcare powered by wireless sensing and AI</div>
+                      <div class="speaker-info">
+                        <b>Abstract:</b>
+                        The multifaceted nature of individual health can be captured using an array of physiological and behavioral indicators, including but not limited to respiratory patterns, cardiac rhythms, neural activity as evidenced by brain waves, articulation and linguistic nuances, kinesthetic dynamics, and the intricate details captured in medical imaging. This talk will present Microsoft Research Asia’s innovative wireless sensing and advanced machine learning technologies, which have the potential to transform daily health monitoring and revolutionize the accuracy and efficiency of disease diagnosis. Furthermore, the talk will share the valuable lessons we have learned through our collaboration with leading hospitals. In the end, I will briefly introduce other wireless research projects we have done at MSRA Shanghai.
+                      </div>
+                      <div class="speaker-info">
+                        <b>Biography:</b>
+                        Dr. Lili Qiu is an Assistant Managing Director of Microsoft Research Asia and is mainly responsible for overseeing the research, as well as the collaboration with industries, universities, and research institutes, at Microsoft Research Asia – Shanghai. She obtained her MS and PhD degrees in computer science from Cornell University. Dr. Qiu is an expert in Internet and wireless networking. In 2005, she joined the University of Texas at Austin as an assistant professor in the Department of Computer Science, and later, in view of her outstanding achievements inthe internet and wireless networks fields, she was promoted to a tenured professor and doctoral advisor. Dr. Qiu is an IEEE Fellow, an ACM Fellow and NAI Fellow. She also serves as the ACM SIGMOBILE chair. She was named an ACM Distinguished Scientist and was a recipient of the NSF CAREER award, among many other honors.
+                      </div>
+                  </td>
                 </tr>
                 <tr >
                     <td class="session-title">
                         <span class="time">9:50 - 10:30</span>
                         <span class="event">Session 1: LLM and Sensing</span>
                     </td>
+                    <th rowspan="4" class="host">
+                      Yuanchun Li
+                    </th>
                 </tr>
                 <tr >
                     <td class="paper">
@@ -202,7 +233,7 @@
                 </tr>
                 <tr >
                     <td class="paper">
-                        <div class="paper-title">Are Large Language Models Capable of Causal Reasoning for Sensing Data Analysis?</div>
+                        <div class="paper-title">[online] Are Large Language Models Capable of Causal Reasoning for Sensing Data Analysis?</div>
                         <div class="speaker-info">Zhizhang Hu (University of California, Merced)
                             , Yue Zhang (University of California, Merced)
                             , Ryan Rossi (Adobe Research)
@@ -230,12 +261,17 @@
                         <span class="time">10:30 - 11:00</span>
                         <span class="event">Coffee Break</span>
                     </td>
+                    <td class="host">
+                    </td>
                 </tr>
                 <tr >
                     <td class="session-title">
                         <span class="time">11:00 - 11:40</span>
                         <span class="event">Session 2: LLM for Mobile Scenario</span>
                     </td>
+                    <th rowspan="4" class="host">
+                      Yuanchun Li
+                    </th>
                 </tr>
                 <tr >
                     <td class="paper">
@@ -250,7 +286,7 @@
                 </tr>
                 <tr >
                     <td class="paper">
-                        <div class="paper-title">Hybrid SLM and LLM for Edge-Cloud Collaborative Inference</div>
+                        <div class="paper-title">[online] Hybrid SLM and LLM for Edge-Cloud Collaborative Inference</div>
                         <div class="speaker-info">Zixu Hao (Tsinghua University, Microsoft Research)
                             , Huiqiang Jiang (Microsoft Research)
                             , Shiqi Jiang (Microsoft Research)
@@ -272,15 +308,28 @@
                 <tr >
                     <td class="session-title">
                         <span class="time">11:40 - 12:30</span>
-                        <span class="event">Panel</span>
+                        <span class="event">Panel: When LLM meets mobile and edge computing</span>
+                        <div class="speaker-info">Lili Qiu (Microsoft Research)</div>
+                        <div class="speaker-info">Marco Gruteser (Google)</div>
+                        <div class="speaker-info">Felix Xiaozhu Lin (University of Virginia)</div>
+                        <div class="speaker-info">Mi Zhang (The Ohio State University)</div>
+                        <div class="speaker-info">Yuanchun Li (Tsinghua University)</div> 
+                    </td>
+                    <td class="host">
+                      Steven Y. Ko
                     </td>
                 </tr>
+
+
 
                 <tr >
                     <td class="session-title">
                         <span class="time">14:00 - 14:45</span>
                         <span class="event">Session 3: LLM for Mobile Hardware</span>
                     </td>
+                    <th rowspan="4" class="host">
+                      Ting Cao
+                    </th>
                 </tr>
                 <tr >
                     <td class="paper">
@@ -319,6 +368,9 @@
                     <td class="session-title">
                         <span class="time">14:45 - 15:30</span>
                         <span class="event">Keynote 2 (Nic Lane)</span>
+                    </td>
+                    <td class="host">
+                      Ting Cao
                     </td>
                 </tr>
 
